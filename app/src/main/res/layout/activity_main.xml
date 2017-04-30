@@ -1,43 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
     >
 
+// Image of the business
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/geek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cablesport_slideshow_2015_02"
+        android:layout_weight="1"
         android:scaleType="centerCrop"
         />
 
+// Name of the business
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My first Android App!"
+        android:text="CABLESPORT GMBH"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="16dp"
-        android:textSize="36dip"
-        android:id="@+id/textView"
+        android:textSize="24sp"
         android:fontFamily="sans-serif-light"
+        android:layout_weight="0"
+        android:textStyle="bold"
 
         />
+
+//  Address of the business
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Benjamin Dunisch"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:textSize="24dip"
-        android:id="@+id/Name"
-        android:textColor="#000"
+        android:text="Address: Burmeisterallee 2, 25421 Pinneberg, Germany"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
         android:fontFamily="sans-serif-light"
+        android:layout_weight="0"
+
         />
 
+// Opening Hours
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opening Hours:"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_weight="0"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday:\nTuesday:\nWednesday:\nThursday:\nFriday:\nSaturday:\nSunday:"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="0"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00 - 18:00\n12:00 - 18:00\n12:00 - 18:00\n12:00 - 18:00\n12:00 - 20:00\n10:00 - 20:00\n10:00 - 20:00"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            />
+
+        </LinearLayout>
+
+// Phone number
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: 04101 8586603"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif-light"
+        android:layout_weight="0"
+        />
+
+</LinearLayout>
